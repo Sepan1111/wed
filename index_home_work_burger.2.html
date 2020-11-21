@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORM</title>
+    </head>
+    <body>
+        <form>
+            <hr>
+            <label for='meet'>Какое мясо?</label>
+            <input type='text' id='meet' name='meet'>
+            <hr>
+            <label for='amount'>Сколько котлет</label>
+            <input type='number' id='amount' name='amount' value='1'>
+            <hr>
+            <label for='doneness'>Степень прожарки</label>
+            <br>
+            <span>Слабо</span>
+            <input type='range' id='doneness' name='done'>
+            <span>Сильно</span>
+            <hr>
+            <label for='added'>Что добавить</label>
+            <br>
+            <label for='vrgs'>Овощи</label>
+            <input type='checkbox' id='vrgs' name='vrgs' value='vrgs'>
+            <br>
+            <label for='add_vrgs'>Доп огурчики</label>
+            <input type='checkbox' id='add_vrgs' name='add_vrgs' value='add_vrgs'>
+            <br>
+            <label for='add_sauce'>Доп соус</label>
+            <input type='checkbox' id='add_sauce' name='add_sauce' value='add_sauce'>
+            <hr>
+            <label for='cheese'>Что на счёт сыра</label>
+            <br>
+            <input type='radio' id='No' name='cheese' value='No'>
+            <label for='Yes'>Да хочу</label>
+            <br>
+            <input type='radio' id='No' name='cheese' value='No'>
+            <label for='cheese'>Нее</label>
+            <hr>
+            <label for='bun'>Какая булка?</label>
+            <select name='ban' id='bun'>
+                <option value='standard'>Обычная</option>
+                <option value='seasam'>С кунжутом</option>
+                <option value='potato'>Картофельноя</option>
+            </select>
+            <hr>
+            <label for='sauce'>Какой соус хотите?</label>
+            <input list='sacse_list' id='sauce' name='sauce'>
+            <datalist id='souce_list'>
+                <option value='Кетчуп'>Кетчуп</option>
+                <option value='Сырный'>Сырный</option>
+                <option value='Барбекю'>Барбекю</option>
+            </datalist>
+        </form>
+    </body>
+</html>
